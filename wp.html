@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+</head>
+
+<body>
+    <!-- <div class="white">
+        <h4>carlo pogi</h4>
+    </div> -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">PORTFOLIO</a>
+        <div class="navbar-links">
+            <a class="nav-link" href="wp.html">Home</a>
+            <a class="nav-link" href="#My Info">My Info</a>
+            <a class="nav-link" href="#Skills">Skills</a>
+            <a class="nav-link" href="#References">Testimonial</a>
+            <a class="nav-link" href="#Contacts">Contacts</a>
+        </div>
+    </nav>
+
+    <section id="Home">
+        <div class="container">
+            <img src="pictures/profile.png" alt="pogi">
+            <div class="typing-text">
+                <span id="typing"></span>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/carlocentin0" target="_blank" class="social-icon facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://x.com/c_carlo25" target="_blank" class="social-icon twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/carlo.centino/" target="_blank" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/carlo-centino-423603316/" target="_blank" class="social-icon linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/carlocentino123" target="_blank" class="social-icon github">
+                    <i class="fab fa-github"></i>
+                </a>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="My Info">
+        <div class="container2 info-section">
+            <h2 class="section-title">My Info</h2>
+            <div class="info-image">
+                <img src="pictures/profile.png" alt="profile">
+            </div>
+            <div class="info-content">
+                <div class="info-text">
+                    <p>"I am a dedicated student with a passion for web development. My goal is to become a professional Web Developer, and I am committed to honing my skills and knowledge in this field."</p>
+                </div>
+                <div class="info-button">
+                    <a href="CV.pdf" download class="download-button">Download CV  <i class="fa-solid fa-file-arrow-down"></i></a>
+                    <div class="gallery">
+                        <img src="pictures/CBYS1.png" alt="Image 1" class="gallery-image">
+                        <img src="pictures/CBYS2.png" alt="Image 2" class="gallery-image">
+                        <img src="pictures/cert.jpg" alt="Image 3" class="gallery-image">
+                        <img src="pictures/endpoint-security.png" alt="Image 4" class="gallery-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Modal HTML -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    
+
+    <section id="Skills">
+        <div class="container3">
+            <h2 class="section-title">Skills</h2><br>
+            <div class="col-sm-6">
+                <div class="skills">
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-2">HTML</p>
+                            <p class="mb-2">85%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" data-value="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-2">CSS</p>
+                            <p class="mb-2">80%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" data-value="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-2">Python</p>
+                            <p class="mb-2">40%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" data-value="40"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-2">Javascript</p>
+                            <p class="mb-2">20%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-orange" role="progressbar" data-value="20"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-2">Django</p>
+                            <p class="mb-2">40%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-green" role="progressbar" data-value="40"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="skills">
+                    <div class="gear-container">
+                        <i class="fas fa-cog gear gear1"></i>
+                        <i class="fas fa-cog gear gear2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <section id="References">
+        <div class="container4">
+            <h2 class="section-title">Testimonial</h2><br>
+            <div class="card">
+                <div class="card-inner">
+                    <img src="pictures/ja.jpg" alt="">
+                    <h5 class="text-primary m-0">Januarthur Paler</h5>
+                    <i>Friend</i><br>
+                    <i>09395497124</i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <img src="pictures/jes.jpg" alt="">
+                    <h5 class="text-primary m-0">Jestrel Rose Nofies</h5>
+                    <i>Best Friend</i><br>
+                    <i>09260160522</i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <img src="pictures/jrf.jpg" alt="">
+                    <h5 class="text-primary m-0">Jeff Froilan Lendio</h5>
+                    <i>Friend</i><br>
+                    <i>09560038574</i>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="Contacts"> 
+        <div class="container5">
+            <div class="contact-form">
+                <h2>Contact Me</h2>
+                <form id="contactForm" action="https://formspree.io/f/xpwaaega" method="POST">
+                    <div>
+                        <input type="text" id="name" name="name" required placeholder="Name">
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" required placeholder="Email">
+                    </div>
+                    <div>
+                        <textarea id="message" name="message" rows="4" required placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="additional-info">
+                <div class="column">
+                    <h3>Contact Information</h3>
+                    <p><strong>Email:</strong> carlocentino25@gmail.com</p>
+                    <p><strong>Contact No:</strong> 09511842395</p>
+                    <p><strong>Address:</strong> Caimito St Blk 5 Lot 33 Talon V , Las Pinas City, Philippines</p>
+                </div>
+                <div class="column">
+                    <h3>Social Media</h3>
+                    <ul>
+                    <p><strong>Facebook:</strong> Carlo Centino</p>
+                    <p><strong>Instagram:</strong> carlo.centino</p>
+                    <p><strong>Twitter:</strong> @c_carlo25</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+</body>
+<footer>
+    <p>&copy; 2024 Web Portfolio. All rights reserved.</p>
+    <p>Developed by Carlo Centino</p>
+</footer>
+</html>
