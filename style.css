@@ -21,7 +21,7 @@ body, html {
     border-bottom: 2px solid #fff;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width: 95%;
+    width: 94.8%;
     z-index: 999; 
 }
 
@@ -101,7 +101,7 @@ body, html {
 
 .container img {
     height: 230px;
-    margin: 50px 0 0 550px;
+    margin: 50px 0 0 530px;
     border-radius: 50%;
     border: 2px solid #ebe9e9;
     background-color: #ddd;
@@ -355,6 +355,10 @@ body, html {
     background-color: #03f510;
 }
 
+.bg-brown{
+    background-color: rgb(162, 55, 55);
+}
+
 /* Animation for progress bars */
 @keyframes fillProgressBar {
     from {
@@ -577,4 +581,185 @@ footer {
 footer p {
     margin: 5px 0;
     font-size: 9px;
+}
+/* Add this CSS for responsive navigation with popup effect */
+.menu-button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@media (min-width: 2048px){
+    .section-title{
+        font-size: 50px;
+    }
+    .navbar{
+        width: 1770px;
+        height: 120px;
+        font-size: 40px;
+        position: sticky;
+        top: 10;
+        border-bottom: 2px solid #fff;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        z-index: 999; 
+    }
+
+    .container,.container2,.container4{
+        width: 1830px;
+        height: 1200px;
+    }
+
+    .container img{
+        height: 550px;
+        width: 550px;
+        margin-left: 650px;
+    }
+
+    .typing-text {
+        text-align: center;
+        font-size: 3.5em;
+        font-family: "Righteous", sans-serif;
+        font-weight: 400;
+        color: white;
+        margin-top: 80px;
+    }
+
+    .typing-text #typing {
+        border-right: 0.1em solid #fff;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .social-icons {
+        text-align: center;
+        margin-top: 250px;
+    }
+
+    .social-icons .social-icon {
+        color: white;
+        font-size: 5em;
+        margin: 0 60px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .gallery-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: transform 0.2s ease-in-out;
+        margin-right: 10px;
+    }
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        max-width: 90%;
+        max-height: 80%;
+    }
+
+    .gallery-image:hover {
+        transform: scale(1.1);
+    }
+
+    .info-text p {
+        font-size: 26px;
+        width: 700px;
+    }
+
+    .info-image img{
+        height: 450px;
+        width: 450px;
+    }
+
+    .download-button{
+        padding: 20px 30px;
+    }
+
+    .container3 {
+        margin: 0 5px 0 5px;
+        background-color: rgb(12, 4, 4);
+        width: 87.5%;
+        height: 750px;
+        position: relative;
+    }
+
+    .skills {
+        padding: 100px;
+        width: 700px;
+    }
+
+    .card{
+        width: 400px;
+        height: 700px;
+    }
+
+    .card img{
+        width: 300px;
+        height: 300px;
+    }
+
+    h5{
+        font-size: 30px;
+    }
+
+    i{
+        font-size: 30px;
+    }
+
+    #Contacts{
+        width: 1790px;
+        height: 1200px;
+    }
+
+    .contact-form{
+        margin-top: -10px;
+    }
+
+    input[type="text" i]{
+        width: 500px;
+        height: 100px;
+        font-size: 50px;
+    }
+
+    input[type="email" i]{
+        width: 500px;
+        height: 100px;
+        font-size: 50px;
+    }
+
+    textarea{
+        width: 500px;
+        height: 300px;
+        font-size: 50px;
+    }
+
+    button{
+        width: 200px;
+        height: 100px;
+        font-size: 50px;
+        border: 5px solid grey;
+    }
+
+    h2{
+        margin-bottom: 50px;
+        font-size: 50px;
+    }
+
+    footer{
+        padding: 20px 0 20px 0;
+        width: 1830px;
+        height: 100px;
+    }
+
+    footer p{
+        font-size: 30px;
+    }
 }
